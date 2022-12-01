@@ -1,0 +1,346 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+nav {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.65) 100%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.9) 100%), url("images/Netflix\ headerbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+header nav .nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.logo {
+    width: 180px;
+}
+
+.logo img {
+    width: 100%;
+    fill: #ef0914;
+}
+
+.nav-wrap a {
+    text-decoration: none;
+    padding: 5px 16px;
+    background-color: #ef0914;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+header {
+    position: relative;
+}
+
+header .nav-contents {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+header .nav-contents h1 {
+    font-size: 3.2rem;
+    padding: 20px;
+}
+
+header .nav-contents h3 {
+    font-size: 1.9rem;
+    padding-bottom: 20px;
+    font-weight: 300;
+}
+
+header .nav-contents p {
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+
+header input {
+    width: 33%;
+    padding: 22px;
+    border: none;
+    outline: none;
+    flex-direction: row;
+}
+
+header button {
+    border: none;
+    outline: none;
+    background-color: #ef0914;
+    color: white;
+    padding: 15px 20px 20px;
+    font-weight: 400;
+    margin-left: -2px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+/* MAIN SECTION */
+
+.hero-section {
+    position: relative;
+}
+
+.hero-section .hero-section-container {
+    border-top: 8px solid#222;
+    background-color: black;
+    display: flex;
+    padding: 0 100px;
+    padding-bottom: 90px;
+}
+
+.hero-section .hero-section-container .left-side {
+    padding-top: 13%;
+    padding-right: 5%;
+}
+
+.hero-section .hero-section-container .left-side h1 {
+    font-size: 3.1rem;
+    line-height: 1.1;
+}
+
+.hero-section .hero-section-container .left-side h3 {
+    font-size: 1.625rem;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+.hero-section .hero-section-container .right-side {
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+    height: 500px;
+}
+
+.hero-section .hero-section-container .right-side img {
+    position: absolute;
+    width: 100%;
+    object-fit: contain;
+}
+
+.hero-section .hero-section-container .right-side .video {
+    margin-left: 13%;
+    margin-top: 16%;
+    width: 73%;
+}
+
+.hero-section .hero-section-container:nth-child(even) .left-side {
+    order: 2;
+}
+
+.hero-section .hero-section-container:nth-child(even) .right-side {
+    width: 100%;
+    position: relative;
+}
+
+.hero-section .hero-section-container:nth-child(even) .left-side {
+    width: 100%;
+}
+
+.hero-section .hero-section-container .download img {
+    width: 40px;
+}
+
+.hero-section .hero-section-container .download {
+    border: 2px solid #222;
+    background-color: #000;
+    border-radius: 10px;
+    padding: 25px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    position: absolute;
+    left: 20%;
+    bottom: 10%;
+}
+
+.hero-section-container .download p {
+    margin-left: 80px;
+    margin-top: 3%;
+}
+
+.hero-section .hero-section-container .download a {
+    text-decoration: none;
+    color: blue;
+    margin-left: 40px;
+}
+
+.hero-section-container .download .gif {
+    width: 30%;
+    position: absolute;
+    right: 0;
+}
+
+.hero-section .hero-section-container:nth-child(4) {
+    border-bottom: 8px solid#222;
+}
+
+div.faq {
+    padding: 50px 38px;
+}
+
+div.faq h1 {
+    font-size: 3.4rem;
+    text-align: center;
+    margin-bottom: 30px
+}
+
+div.questions {
+    margin: 0 auto;
+    max-width: 880px;
+    font-size: 1.7rem;
+}
+
+div.question {
+    position: relative;
+    background-color: #303030;
+    margin-bottom: 10px;
+}
+
+.question svg {
+    width: 35px;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    transform: rotate(45deg);
+    transition: all 0.2s ease;
+}
+
+.question .header {
+    display: block;
+    padding: 20px 30px;
+    border-bottom: 5px solid #000;
+    cursor: pointer;
+}
+
+.question .answer {
+    padding: 0 30px;
+    max-height: 0;
+    overflow: hidden;
+    line-height: 35px;
+    transition: all 0.2s ease;
+}
+
+.question input[type="checkbox"]:checked~div.answer {
+    padding: 30px 30px;
+    max-height: 600px;
+}
+
+.question input[type="checkbox"] {
+    display: none;
+}
+
+.question input[type="checkbox"]:checked~.header svg {
+    transform: rotate(90deg);
+}
+
+div.btn {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+div.btn h3 {
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+    font-weight: normal;
+}
+
+div.btn input {
+    width: 43%;
+    padding: 22px;
+    border: none;
+    outline: none;
+    flex-direction: row;
+}
+
+div.btn button {
+    border: none;
+    outline: none;
+    background-color: #ef0914;
+    color: white;
+    padding: 15px 20px 20px;
+    font-weight: 400;
+    margin-left: -2px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+/* FOOTER SECTION */
+
+footer {
+    border-top: 8px solid #222;
+    padding-top: 55px;
+}
+
+footer .content-wrap {
+    max-width: 1350px;
+    margin: 0 90px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8rem;
+}
+
+footer .qu a {
+    /* width: 50%;
+    text-align: justify; */
+    padding-left: 310px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    opacity: 0.5;
+    font-weight: lighter;
+}
+
+footer .qu a:hover {
+    text-decoration: underline;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.5;
+    font-weight: lighter;
+    margin-bottom: 2rem;
+    line-height: 38px;
+}
+
+footer .footer-content a:hover {
+    text-decoration: underline;
+}
+
+.footer-content p {
+    padding: 30px 0;
+    color: #fff;
+    opacity: 0.5;
+    font-weight: lighter;
+}
