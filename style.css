@@ -311,9 +311,7 @@ footer .content-wrap {
 }
 
 footer .qu a {
-    /* width: 50%;
-    text-align: justify; */
-    padding-left: 310px;
+    padding-left: 300px;
     text-decoration: none;
     font-size: 18px;
     color: #fff;
